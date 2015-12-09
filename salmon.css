@@ -1,13 +1,37 @@
 *{
-  background-color: black;
-  color: white;
-}
-
-.data{
-  font:arial;
+  background-image: url("http://digipraim.com/data_images/out/25/663730-underwater-wallpaper.jpg");
+  color: yellow;
+  font-size: 16px;
 }
 
 h1{
   color:yellow;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+}
+
+td,th {
+   padding: 10px;
+   text-align: center;
+   border-style: white, dotted;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#submit, #clear{
+  width:125px;
+  border-radius: 20px;
+  margin: 0 auto;
+  float: left;
+  background-color:#5cbf2a;;
+}
+
+#input{
+  font-size:16px;
+  color: white;
+  font-family:arial;
 }
