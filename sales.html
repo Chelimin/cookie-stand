@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1> <img src="https://canvas.instructure.com/courses/983157/files/38304907/preview" style="width:200px;height:48px;">   Pat's Salmon Cookies   <img src="https://canvas.instructure.com/courses/983157/files/38304907/preview" style="width:200px;height:48px;"> </h1>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  </head>
+    <link rel="stylesheet" href="salmon.css">
+    <!-- <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css"> -->
+    <title>Pat's Cookie Store</title>
+  </head>
+  <body>
+
+    <form id="user-form">
+          <fieldset>
+            <legend id="input">INPUTS: </legend>
+
+            <label for="LocName" id="input">Location:</label>
+            <input name="LocName" type="text" placeholder="Location">
+
+            <label for="MinCm" id="input">Minimum Customers:</label>
+            <input name="MinCm" type="number" placeholder="Minimum">
+
+            <label for="MaxCm" id="input">Maximum Customers:</label>
+            <input name="MaxCm" type="number" placeholder="Maximum">
+
+            <label for="AvgCm" id="input">Average Cookies/Customer:</label>
+            <input name="AvgCm" type="number" placeholder="Average">
+
+            <button id="submit">Submit</button>
+
+            <button id="clear" type="reset">Clear all</button>
+
+<!-- button types: "submit"(default), "reset", "button" -->
+
+          </fieldset>
+        </form>
+
+
+    <section id="data">
+    </section>
+    <script src="salmon.js"></script>
+  </body>
+</html>

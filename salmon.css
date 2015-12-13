@@ -1,14 +1,108 @@
+@import url("normalize.css");
+@import url("skeleton.css");
+
 *{
-  background-image: url("http://digipraim.com/data_images/out/25/663730-underwater-wallpaper.jpg");
-  color: yellow;
-  font-size: 16px;
+  /*background-image: url("http://digipraim.com/data_images/out/25/663730-underwater-wallpaper.jpg");*/
+  /*background-image: url("http://fishbio.com/wp-content/uploads/2012/07/water-background.jpg");*/
+  background-size:cover;
+  background-color: white;
+  font-size: 18px;
+  align-content: center;
+  color: blue;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 5px;
+}
+
+nav{
+  display:block;
+}
+
+.menu{
+  display:inline-flex;
+  padding-left: 120px;
+}
+
+.familyPic{
+  width:800px;
+  height:500px;
+  margin:0;
+  padding:50px;
+  float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-color: black;
+}
+
+nav li {
+    margin: center;
+}
+
+nav li a {
+    display: inline;
+    color: grey;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    color: blue;
+}
+
+/*.bar{
+  position: absolute;
+  margin-top: 75px;
+  max-width: 960px;
+  background-color: red;
+}*/
+
+a{
+  font-size: 20px;
 }
 
 h1{
-  color:yellow;
+  color:orange;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 36px;
+}
+
+h2{
+  color:blue;
+  text-align:center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  text-decoration-style: double;wavy;
+}
+
+h3{
+  color:blue;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+}
+
+p{
+  color:blue;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.copyright{
+  color:grey;
 }
 
 td,th {
@@ -25,13 +119,71 @@ table{
 #submit, #clear{
   width:125px;
   border-radius: 20px;
-  margin: 0 auto;
-  float: left;
   background-color:#5cbf2a;;
+  margin: 10px;
+  color: grey;
+  float:none;
 }
 
 #input{
-  font-size:16px;
-  color: white;
+  font-size:14px;
+  color: grey;
   font-family:arial;
+  display:inline;
 }
+
+.col4{
+  display:block;
+}
+
+.footer{
+    color:grey;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+  }
+
+.fishes{
+  float: right;
+  width: 250px;
+  height: 400px;
+}
+
+.move{
+
+  			background: NONE;
+  			border: none;
+  			outline: none;
+  			border-radius: 3px;
+  			padding: 15px 70px;
+  			border:3px solid transparent;
+
+  			animation: pulse 1s linear infinite alternate;
+  			-webkit-animation: pulse 1s linear infinite alternate;
+  		}
+  		.active,
+  		.move:active{
+  			background-image: linear-gradient(rgba(0,0,0,.1) 13%, transparent 13%,transparent);
+  			box-shadow: 0 1px 0 0 #383838;
+  			color: rgba(0, 0, 0,.45);
+  			text-shadow: none;
+
+  			-webkit-animation-play-state: paused;
+      	animation-play-state: paused;
+  		}
+  		.move:focus,
+  		.move:hover{
+  			-webkit-animation-play-state: paused;
+      	animation-play-state: paused;
+  		}
+
+  		@-webkit-keyframes pulse {
+  			100% {
+  				transform: translateY(6.9px);
+  			}
+  		}
+
+  		@keyframes pulse {
+  			100% {
+  				transform: translateY(6.9px);
+  			}
+  		}
